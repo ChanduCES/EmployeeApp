@@ -1,7 +1,16 @@
-var builder = WebApplication.CreateBuilder(args);
+using EmployeeApp.API.Constants;
 
-var app = builder.Build();
+public partial class Program 
+{
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-app.Run();
+        builder.Services.AddHealthChecks();
+        var app = builder.Build();
+        app.MapHealthChecks($"{Endpoints.BaseUrl}/{Endpoints.HealthCheck}");
+        app.Run();
+    }
+}
 
-public partial class Program { }
+public partial class Program { };
