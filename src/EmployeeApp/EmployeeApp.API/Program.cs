@@ -8,7 +8,7 @@ public partial class Program
 
         builder.Services.AddHealthChecks();
         var app = builder.Build();
-        app.MapHealthChecks($"{Endpoints.BaseUrl}/{Endpoints.HealthCheck}");
+        app.MapHealthChecks($"{ApiRoutes.BaseUrl}/{ApiRoutes.HealthCheck}");
         app.Run();
     }
 }

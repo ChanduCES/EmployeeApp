@@ -16,7 +16,7 @@ namespace EmployeeApp.IntegrationTest
         public async Task HealthCheck_WhenCalled_ShouldReturnOKStatus()
         {
             //Act
-            var actual = await _httpClient.GetAsync($"{Endpoints.BaseUrl}/{Endpoints.HealthCheck}");
+            var actual = await _httpClient.GetAsync($"{ApiRoutes.BaseUrl}/{ApiRoutes.HealthCheck}");
 
             //Assert
             actual.StatusCode.Should().Be(HttpStatusCode.OK);
