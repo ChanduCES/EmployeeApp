@@ -8,7 +8,6 @@ public partial class Program
 
         builder.Services.AddControllers();
         builder.Services.AddHealthChecks();
-        builder.Services.AddMvcCore();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
