@@ -25,7 +25,7 @@ namespace EmployeeApp.IntegrationTest
 
             //Assert
             actual.StatusCode.Should().Be(HttpStatusCode.OK);
-            title.Should().BeEquivalentTo(AppConstants.EmployeeAppAPI);
+            title.Should().Be(AppConstants.EmployeeAppAPI);
         }
     }
 }
