@@ -6,6 +6,7 @@ public partial class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddControllers();
         builder.Services.AddHealthChecks();
         builder.Services.AddMvcCore();
         builder.Services.AddEndpointsApiExplorer();
@@ -16,6 +17,7 @@ public partial class Program
         
         app.UseSwagger();
         app.UseSwaggerUI();
+        app.MapControllers();
 
         app.Run();
     }

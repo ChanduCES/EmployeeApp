@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApp.API", "EmployeeApp.API\EmployeeApp.API.csproj", "{F332B11C-11CE-4C9D-B1F8-925CBF021333}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeApp.API", "EmployeeApp.API\EmployeeApp.API.csproj", "{F332B11C-11CE-4C9D-B1F8-925CBF021333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApp.IntegrationTest", "EmployeeApp.IntegrationTest\EmployeeApp.IntegrationTest.csproj", "{80D7DAF2-4365-49C7-B601-70CA70BD1C87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeApp.IntegrationTest", "EmployeeApp.IntegrationTest\EmployeeApp.IntegrationTest.csproj", "{80D7DAF2-4365-49C7-B601-70CA70BD1C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApp.Application", "EmployeeApp.Application\EmployeeApp.Application.csproj", "{A0267323-3110-4D36-B437-FECDA40ABBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{80D7DAF2-4365-49C7-B601-70CA70BD1C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80D7DAF2-4365-49C7-B601-70CA70BD1C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D7DAF2-4365-49C7-B601-70CA70BD1C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0267323-3110-4D36-B437-FECDA40ABBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0267323-3110-4D36-B437-FECDA40ABBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0267323-3110-4D36-B437-FECDA40ABBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0267323-3110-4D36-B437-FECDA40ABBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
