@@ -1,6 +1,6 @@
-﻿using EmployeeApp.API.Constants;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using EmployeeApp.IntegrationTest.Constants;
 
 namespace EmployeeApp.IntegrationTest
 {
@@ -17,15 +17,15 @@ namespace EmployeeApp.IntegrationTest
         public async Task SwaggerApi_WhenCalled_ShouldReturnOKStatus()
         {
             //Act
-            var actual = await _httpClient.GetAsync(ApiRoutes.SwaggerEndpoint);
+            var actual = await _httpClient.GetAsync(TestCaseConstants.SwaggerEndpoint);
             var result = await actual.Content.ReadAsStringAsync();
 
-            var json = JsonConvert.DeserializeObject<JToken>(result);
-            string title = json[AppConstants.InfoJToken][AppConstants.TitleJToken].ToString();
+            var jsonObject = JsonConvert.DeserializeObject<JObject>(result);
+            string title = jsonObject[TestCaseConstants.InfoJToken][TestCaseConstants.TitleJToken].ToString();
 
             //Assert
             actual.StatusCode.Should().Be(HttpStatusCode.OK);
-            title.Should().Be(AppConstants.EmployeeAppAPI);
+            title.Should().Be(TestCaseConstants.EmployeeAppAPI);
         }
     }
 }
