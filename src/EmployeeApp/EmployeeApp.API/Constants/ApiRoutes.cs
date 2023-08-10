@@ -4,7 +4,6 @@
     {
         public const string BaseUrl = "api";
         public const string HealthCheck = "HealthCheck";
-        public const string SwaggerEndpoint = "/swagger/v1/swagger.json";
         public const string Employee = "Employee";
     }
 }
